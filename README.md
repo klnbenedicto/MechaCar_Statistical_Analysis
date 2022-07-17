@@ -36,3 +36,29 @@ The MechaCar Suspension_Coil.csv dataset contains the results from multiple prod
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. The current manufacturing data meets this specification for the total since the overall variance was 62.30 PSI. Lot 1 and Lot 2 also met the specification with 0.98 PSI and 7.47 PSI respectively. However, Lot 3 does not meet the specification because it had a variance of 170.29 PSI.
 
+## T-Tests on Suspension Coils
+Using my knowledge of R, I performed t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
+
+|*All Manufacturing Lot T-Test*|
+|:--:|
+|![Total Lot T-Test](image/../images/Deliverable03_total_t_test.png)|
+
+In the full manufacturing lot, the true mean of the sample is 1498.78 with a p-value of 0.06028. Since the p-value is greater than the common signicance level of 0.05, there is not enough evidence to support rejecting the null hypothesis. Therefore, the full manufacturing lot is statistically similar to the presumed population mean of 1,500.
+
+|*Lot 1 T-Test*|
+|:--:|
+|![Total Lot T-Test](image/../images/Deliverable03_lot1_t_test.png)|
+
+In Lot 1, the true mean of the sample is 1500 with a p-value of 1. Since the p-value is greater than the common signicance level of 0.05, there is not enough evidence to support rejecting the null hypothesis. Therefore, the full manufacturing lot is statistically similar to the presumed population mean of 1,500.
+
+|*Lot 2 T-Test*|
+|:--:|
+|![Total Lot T-Test](image/../images/Deliverable03_lot2_t_test.png)|
+
+In Lot 2, the true mean of the sample is 1500.2 with a p-value of 0.6072. Since the p-value is greater than the common signicance level of 0.05, there is not enough evidence to support rejecting the null hypothesis. Therefore, the full manufacturing lot is statistically similar to the presumed population mean of 1,500.
+
+|*Lot 3 T-Test*|
+|:--:|
+|![Total Lot T-Test](image/../images/Deliverable03_lot3_t_test.png)|
+
+In Lot 3, the true mean of the sample is 1496.14 with a p-value of 0.04168. Since the p-value is less than the common signicance level of 0.05, there is enough evidence to support rejecting the null hypothesis. Therefore, the full manufacturing lot is not statistically similar to the presumed population mean of 1,500.
